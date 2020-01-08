@@ -1,0 +1,135 @@
+.news {
+	background-color: $grey-bg;
+	
+	.news-title {
+		font-size: 50px;
+		font-family: 'MuseoSans-100';
+		font-weight: 100;
+		text-align: center;
+		color: $nav-text;
+		padding-top: 102px;
+		margin-bottom: 49px;
+		letter-spacing: -1.1px;
+
+		@include mq(tablet) {
+			font-size: 35px;
+			padding-top: 53px;
+			margin-right: 27px;
+			margin-bottom: 41px;
+		}
+
+		@include mq(mobile) {
+			font-size: 22px;
+			padding-top: 20px;
+			letter-spacing: 0.1px;
+			margin-bottom: 28px;
+		}
+	}
+}
+
+.info-block {
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	column-gap: 23px;
+	margin-bottom: 105px;
+
+	@include mq(tablet) {
+		grid-template-columns: 31% 31% 31%;
+		column-gap: 25px;
+		margin-bottom: 70px;
+	}
+
+	@include mq(mobile) {
+		grid-template-columns: auto;
+		margin-bottom: 28px;
+		margin-left: 2px;
+	}
+}
+
+.block-news {
+	display: inline-block;
+
+	@include mq(mobile) {
+		margin-bottom: 17px;
+		padding-bottom: 26px;
+	}
+
+	.news-img {
+		width: 100%;
+		height: 221px;
+		margin-bottom: 26px;
+		background-color: $color-black;
+
+		@include mq(tablet) {
+			height: 130px;
+		}
+
+		@include mq(mobile) {
+			height: 84px;
+			display: inline-block;
+			width: 31%;
+			float: left;
+			margin-bottom: 0;
+			margin-right: 9px;
+		}
+	}
+
+	p {
+		font-size: 18px;
+		font-family: 'MuseoSans-300';
+		color: $nav-text;
+		margin-bottom: 21px;
+
+		@include mq(tablet) {
+			font-size: 14px;
+			margin-bottom: 12px;
+			letter-spacing: 0.5px;
+			margin-left: 1px;
+		}
+
+		@include mq(mobile) {
+			font-size: 13px;
+			margin-bottom: 11px;
+		}
+	}
+
+	h3 {
+		font-size: 30px;
+		font-family: 'MuseoSans-300';
+		font-weight: 100;
+		color: $nav-text;
+		letter-spacing: -0.59px;
+		line-height: 1.45;
+
+		@include mq(tablet) {
+			font-size: 18px;
+			letter-spacing: -0.29px;
+			line-height: 1.3;
+			margin-left: 3px;
+		}
+
+		@include mq(mobile) {
+			font-size: 15px;
+			letter-spacing: -0.4px;
+		}
+	}
+}
+
+.line-news {
+	@include mq(mobile) {
+		border-bottom: 2px solid $color-line;
+	}
+}
+
+.news-button {
+	text-align: center;
+	padding-bottom: 109px;
+
+	@include mq(tablet) {
+		padding-bottom: 42px;
+	}
+
+	@include mq(mobile) {
+		padding-bottom: 49px;
+	}
+}

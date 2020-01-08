@@ -1,0 +1,184 @@
+.btn {
+	border: none;
+	outline: none;
+	font-family: 'MuseoSans-700';
+	border-radius: 30px;
+	text-align: left;
+	margin: 0;
+
+	.arrow-right {
+		border: solid $color-white;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 4px;
+		transform: rotate(-45deg);
+
+		@include mq(tablet) {
+			padding: 3px;
+		}
+
+		@include mq(mobile) {
+			padding: 3px;
+		}
+	}
+}
+
+.button-blue {
+	background: $color-blue;
+	color: $color-white;
+	padding: 14px 25px;
+	font-size: 18px;
+	margin-top: 4px;
+	margin-left: 5px;
+	position: relative;
+	z-index: 1;
+
+	@include mq(tablet) {
+		margin-left: 0;
+		padding: 14px 25px;
+	}
+
+	@include mq(mobile) {
+		margin-top: 10px;
+		margin-left: 0px;
+		padding: 10px 11px;
+		border-radius: 30px;
+		font-size: 13px;
+	}
+
+	.arrow-right {
+		@include mq(tablet) {
+			margin-left: 6px;
+		}
+
+		@include mq(mobile) {
+			margin-left: 4px;
+		}
+	}
+}
+
+.button-blue-second {
+	background: $color-blue;
+	color: $color-white;
+	padding: 10px 16px;
+	font-size: 16px;
+	margin-left: 4px;
+
+	@include mq(tablet) {
+		font-size: 14px;
+		padding: 10px 19px;
+		letter-spacing: 0.1px;
+		margin-left: 8px;
+	}
+
+	@include mq(mobile) {
+		display: none;
+	}
+
+	.arrow-right {
+		margin-left: 2px;
+
+		@include mq(tablet) {
+			margin-left: 7px;
+		}
+	}
+}
+
+.button-white {
+	background-color: $color-white;
+	color: $color-blue;
+	border: 2px solid $color-blue;
+	padding: 9px 16px;
+	font-size: 16px;
+
+	@include mq(tablet) {
+		margin-right: 17px;
+		font-size: 16px;
+		padding: 9px 11px;
+	}
+
+	@include mq(mobile) {
+		padding: 10px 14px;
+		letter-spacing: 0px;
+		font-size: 13px
+	}
+
+	.arrow-right {
+		border: solid $color-blue;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 3px;
+		transform: rotate(-45deg);
+
+		@include mq(tablet) {
+			margin-left: 11px;
+		}
+	}
+}
+
+.carousel-buttons {
+	position: absolute;
+	width: 100%;
+	transform: translateY(-668%);
+
+	@include mq(tablet) {
+		transform: translateY(-513%);
+	}
+	
+	@include mq(mobile) {
+		transform: translateY(-402%);
+	}
+
+	.button-arrows {
+		color: $color-white;
+		width: 65px;
+		height: 65px;
+		border: 5px solid $color-white;
+		border-radius: 65px;
+		background-color: transparent;
+		outline: none;
+
+		@include mq(tablet) {
+			width: 42px;
+			height: 42px;
+			border: 3px solid $color-white;
+			border-radius: 42px;
+		}
+
+		@include mq(mobile) {
+			width: 23px;
+			height: 23px;
+			border: 2px solid $color-white;
+			border-radius: 23px;
+		}
+	}
+
+	.js-slide-next {
+		float: right;
+	}
+}
+
+i {
+	border: solid $color-white;
+	border-width: 0 5px 5px 0;
+	display: inline-block;
+	padding: 6px;
+
+	@include mq(tablet) {
+		border-width: 0 3px 3px 0;
+		padding: 4px;
+	}
+
+	@include mq(mobile) {
+		border-width: 0 2px 2px 0;
+		padding: 2px;
+	}
+}
+
+.right {
+	transform: rotate(-45deg);
+}
+
+.left {
+	transform: rotate(135deg);
+}

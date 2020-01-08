@@ -1,0 +1,75 @@
+.footer {
+	background-color: $grey-bg;
+	border-top: 2px solid $color-line;
+}
+
+.main-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	bottom: 0;
+	height: 82px;
+
+	@include mq(mobile) {
+		height: 65px;
+	}
+}
+
+.left-footer {
+	font-size: 14px;
+	font-family: 'MuseoSans-500';
+	color: $color-icon;
+
+	@include mq(mobile) {
+		font-size: 11px;
+	}
+
+	.blue-text {
+		color: $color-underline;
+	}
+}
+
+.footer-soc-icons {
+	margin-top: 4px;
+	@include mq(tablet) {
+		margin-top: 8px;
+	}
+}
+
+.soc-icons {
+	margin-left: 8px;
+	color: $color-icon;
+	text-decoration: none;
+
+	@include mq(tablet) {
+		margin-left: 9px;
+	}
+
+	@include mq(mobile) {
+		margin-left: 3px;
+	}
+}
+
+.icon-facebook-icon {
+	font-size: 18px;
+
+	@include mq(mobile) {
+		font-size: 14px;
+	}
+}
+
+.icon-twitter-icon {
+	font-size: 14px;
+
+	@include mq(tablet) {
+		font-size: 16px;
+	}
+}
+
+.icon-youtube-icon {
+	font-size: 14px;
+	
+	@include mq(tablet) {
+		font-size: 16px;
+	}
+}
